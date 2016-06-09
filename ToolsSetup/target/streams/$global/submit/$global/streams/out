@@ -1,12 +1,10 @@
 [0m[[0minfo[0m] [0mAttempting to submit "example" assignment in "progfun1" course[0m
 [0m[[0minfo[0m] [0mUsing:[0m
 [0m[[0minfo[0m] [0m- email: arunansu@hotmail.com[0m
-[0m[[0minfo[0m] [0m- submit token: XIMdNjOgnt3p6gUg[0m
+[0m[[0minfo[0m] [0m- submit token: FrxClkadAF4SHarU[0m
 [0m[[0minfo[0m] [0mConnecting to Coursera...[0m
-[0m[[0minfo[0m] [0mSuccessfully connected to Coursera. (Status 201)[0m
-[0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0mAssignment submitted successfully![0m
-[0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0mYou can see how you scored by going to:[0m
-[0m[[0minfo[0m] [0mhttps://www.coursera.org/learn/progfun1/programming/xIz9O/[0m
-[0m[[0minfo[0m] [0mand clicking on "My Submission".[0m
+[0m[[31merror[0m] [0mSubmission failed.[0m
+[0m[[31merror[0m] [0mThere was something wrong while attempting to submit.[0m
+[0m[[31merror[0m] [0mCoursera says:[0m
+[0m[[31merror[0m] [0mCould not parse Coursera's response:[0m
+[0m[[31merror[0m] [0mMap(errorCode -> assignmentSlugMismatch, message -> Token is for a different assignment., details -> Map(learnerMessage -> You used a token for "Example" in "Parallel programming". Please use a token for the assignment you are submitting.)) (Status 400)[0m
