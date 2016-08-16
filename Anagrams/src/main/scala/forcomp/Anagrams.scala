@@ -1,5 +1,7 @@
 package forcomp
 
+import common._
+import scala.collection.immutable._
 
 object Anagrams {
 
@@ -99,9 +101,13 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
-  def subtract(x: Occurrences, y: Occurrences): Occurrences = 
-    ((((x ++ (y map (li => (li._1, li._2)))) groupBy(x => x._1)) mapValues(_.map(_._2).sum) toList) filter (_._2 != 0)) sorted
-
+  def subtract(x: Occurrences, y: Occurrences): Occurrences = {
+    (y foldLeft SortedMap[Char, Int]() ++ x) { case (map, (ch, tm)) => {
+      val newTm = map(ch) - tm
+      if (newTm != 0) map updated (ch, newTm)
+      else map - ch
+    }}.toList
+  }
   /** Returns a list of all anagram sentences of the given sentence.
    *
    *  An anagram of a sentence is formed by taking the occurrences of all the characters of
@@ -142,5 +148,16 @@ object Anagrams {
    *
    *  Note: There is only one anagram of an empty sentence.
    */
-  def sentenceAnagrams(sentence: Sentence): List[Sentence] = if(sentence.isEmpty) List(Nil) else Nil
+  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+    def iter(occurrences: Occurrences): List[Sentence] = {
+      if (occurrences.isEmpty) List(Nil)
+      else for {
+        combination <- combinations(occurrences)
+        word <- dictionaryByOccurrences getOrElse (combination, Nil)
+        sentence <- iter(subtract(occurrences, wordOccurrences(word)))
+        if !combination.isEmpty
+      } yield word :: sentence
+    }
+    iter(sentenceOccurrences(sentence))
+  }
 }
