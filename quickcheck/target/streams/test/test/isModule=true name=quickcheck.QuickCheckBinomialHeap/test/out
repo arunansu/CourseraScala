@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m+ Heap.gen1: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.smallest of 2 should be smallest in a heap that only containing the 2: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.Deleting the minimum value should empty the heap: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m! Heap.Heap is sorted if deleting min from heap results in heap whose min is greater: Exception raised on property evaluation.[0m
+[0m[[0minfo[0m] [0m> ARG_0: List(Node(-1276044932,0,List()), Node(537778789,1,List(Node(2021468700,0,List()))), Node(-2147483648,3,List(Node(-1707372966,2,List(Node(-1666048308,1,List(Node(1556981555,0,List()))), Node(1,0,List()))), Node(0,1,List(Node(789186283,0,List()))), Node(1625900555,0,List()))))[0m
+[0m[[0minfo[0m] [0m> Exception: java.util.NoSuchElementException: min of empty heap[0m
+[0m[[0minfo[0m] [0m+ Heap.min of two melded heaps should be min of min of both heaps: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.Two heaps are equal if recursively removing min element from each equals: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.min of two heaps should be same even after displacing min of either heap with it: OK, passed 100 tests.[0m

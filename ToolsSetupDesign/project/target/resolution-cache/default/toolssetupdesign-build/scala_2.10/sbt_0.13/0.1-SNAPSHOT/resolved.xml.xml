@@ -4,7 +4,7 @@
 		module="toolssetupdesign-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160816141437"
+		publication="20160919140452"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

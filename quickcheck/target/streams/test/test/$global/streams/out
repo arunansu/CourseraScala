@@ -1,0 +1,15 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(quickcheck.QuickCheckBinomialHeap, sbt.SubclassFingerprintWrapper@a29af29, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(quickcheck.QuickCheckSuite, org.scalatest.tools.Framework$$anon$1@5247429b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mSummary for ScalaCheck not available.[0m
+[0m[[0minfo[0m] [0mScalaTest[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 527 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 6[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 5, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[31merror[0m] [0mError: Total 13, Failed 1, Errors 1, Passed 11[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	quickcheck.QuickCheckSuite[0m
+[0m[[31merror[0m] [0mError during tests:[0m
+[0m[[31merror[0m] [0m	quickcheck.QuickCheckBinomialHeap[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
