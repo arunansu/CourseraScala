@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75c177dc[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7f17fdae[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -16,7 +16,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->ch.epfl.lamp#scala-grading-runtime_2.11;0.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving ch.epfl.lamp#scala-grading-runtime_2.11;0.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ae27357[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@241cbfd[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: ch.epfl.lamp#scala-grading-runtime_2.11;0.3[0m
 [0m[[0mdebug[0m] [0m	found ch.epfl.lamp#scala-grading-runtime_2.11;0.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->ch.epfl.lamp#scala-grading-runtime_2.11;0.3 [compile->runtime][0m
@@ -142,7 +142,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->ch.epfl.lamp#scala-grading-runtime_2.11;0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.storm-enroute#scalameter-core_2.11;0.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.storm-enroute#scalameter-core_2.11;0.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c43f9eb[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13d0f8f8[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.storm-enroute#scalameter-core_2.11;0.6[0m
 [0m[[0mdebug[0m] [0m	found com.storm-enroute#scalameter-core_2.11;0.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.storm-enroute#scalameter-core_2.11;0.6 [compile->runtime][0m
@@ -188,7 +188,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.storm-enroute#scalameter-core_2.11;0.6 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.github.scala-blitz#scala-blitz_2.11;1.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.github.scala-blitz#scala-blitz_2.11;1.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57bf0246[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b33d1da[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.scala-blitz#scala-blitz_2.11;1.1[0m
 [0m[[0mdebug[0m] [0m	found com.github.scala-blitz#scala-blitz_2.11;1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.github.scala-blitz#scala-blitz_2.11;1.1 [compile->runtime][0m
@@ -210,7 +210,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.github.scala-blitz#scala-blitz_2.11;1.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-swing_2.11;1.0.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-swing_2.11;1.0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b331676[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cbe2949[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-swing_2.11;1.0.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-swing_2.11;1.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-swing_2.11;1.0.1 [compile->runtime][0m
@@ -574,7 +574,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->junit#junit;4.10 [test->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.storm-enroute#scalameter_2.11;0.6 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.storm-enroute#scalameter_2.11;0.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@370ff510[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@96ab4d1[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.storm-enroute#scalameter_2.11;0.6[0m
 [0m[[0mdebug[0m] [0m	found com.storm-enroute#scalameter_2.11;0.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT->com.storm-enroute#scalameter_2.11;0.6 [test->runtime][0m
@@ -1373,7 +1373,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 649ms :: artifacts dl 21ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3500ms :: artifacts dl 149ms[0m
 [0m[[0mdebug[0m] [0m	report for parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT compile produced in C:\PAT\Dev\Github\CourseraScala\ToolsSetupParallel\target\resolution-cache\reports\parprog1-example-parprog1-example_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT runtime produced in C:\PAT\Dev\Github\CourseraScala\ToolsSetupParallel\target\resolution-cache\reports\parprog1-example-parprog1-example_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT test produced in C:\PAT\Dev\Github\CourseraScala\ToolsSetupParallel\target\resolution-cache\reports\parprog1-example-parprog1-example_2.11-test.xml[0m
@@ -1387,5 +1387,5 @@
 [0m[[0mdebug[0m] [0m	report for parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT docs produced in C:\PAT\Dev\Github\CourseraScala\ToolsSetupParallel\target\resolution-cache\reports\parprog1-example-parprog1-example_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT pom produced in C:\PAT\Dev\Github\CourseraScala\ToolsSetupParallel\target\resolution-cache\reports\parprog1-example-parprog1-example_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for parprog1-example#parprog1-example_2.11;0.1-SNAPSHOT scala-tool produced in C:\PAT\Dev\Github\CourseraScala\ToolsSetupParallel\target\resolution-cache\reports\parprog1-example-parprog1-example_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (649ms resolve - 21ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3500ms resolve - 149ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

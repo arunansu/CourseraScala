@@ -23,11 +23,9 @@ object Lists {
    * @param xs A list of natural numbers
    * @return The sum of all elements in `xs`
    */
-    def sum(xs: List[Int]): Int = {
-      xs match {
-        case x :: tail => x + sum(tail) // if there is an element, add it to the sum of the tail
-        case Nil => 0 // if there are no elements, then the sum is 0
-      }
+    def sum(xs: List[Int]): Int = xs match {
+      case Nil => 0
+      case h :: tail => h + sum(tail)
     }
   
   /**
@@ -43,8 +41,12 @@ object Lists {
    * @return The largest element in `xs`
    * @throws java.util.NoSuchElementException if `xs` is an empty list
    */
-    def max(xs: List[Int]): Int = xs match {
-        case Nil => 0
-        case xs => xs.max
-        }
+    def max(xs: List[Int]): Int = {
+      def getMax(ys: List[Int], m: Int): Int = ys match {
+        case Nil => throw new java.util.NoSuchElementException("List is empty")
+        case h :: Nil => if (h > m) h else m
+        case h :: tail => if (h > m) getMax(tail, h) else getMax(tail, m)
+      }
+      getMax(xs, 0)
+    }
   }
