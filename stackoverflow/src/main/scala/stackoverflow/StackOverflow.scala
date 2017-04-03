@@ -78,46 +78,73 @@ class StackOverflow extends Serializable {
 
   /** Group the questions and answers together */
   def groupedPostings(postings: RDD[Posting]): RDD[(Int, Iterable[(Posting, Posting)])] = {
-    ???
+    val answers = postings
+      .filter(a => a.postingType == 2 && a.parentId.isDefined)
+      .map(a => (a.parentId.get, a))
+
+    val questions = postings
+      .filter(_.postingType == 1)
+      .map(q => (q.id, q))
+
+    questions
+      .join(answers)
+      .groupByKey()
   }
 
 
   /** Compute the maximum score for each posting */
   def scoredPostings(grouped: RDD[(Int, Iterable[(Posting, Posting)])]): RDD[(Posting, Int)] = {
 
-    def answerHighScore(as: Array[Posting]): Int = {
-      var highScore = 0
-          var i = 0
-          while (i < as.length) {
-            val score = as(i).score
-                if (score > highScore)
-                  highScore = score
-                  i += 1
-          }
-      highScore
-    }
+//    def answerHighScore(as: Array[Posting]): Int = {
+//      var highScore = 0
+//          var i = 0
+//          while (i < as.length) {
+//            val score = as(i).score
+//                if (score > highScore)
+//                  highScore = score
+//                  i += 1
+//          }
+//      highScore
+//    }
 
-    ???
+    def answerHighScore(as: Iterable[Posting]): Int = as.map(_.score).max
+
+    grouped
+      .flatMap(_._2)
+      .groupByKey()
+      .mapValues(answerHighScore)
   }
 
 
   /** Compute the vectors for the kmeans */
   def vectorPostings(scored: RDD[(Posting, Int)]): RDD[(Int, Int)] = {
     /** Return optional index of first language that occurs in `tags`. */
-    def firstLangInTag(tag: Option[String], ls: List[String]): Option[Int] = {
-      if (tag.isEmpty) None
-      else if (ls.isEmpty) None
-      else if (tag.get == ls.head) Some(0) // index: 0
-      else {
-        val tmp = firstLangInTag(tag, ls.tail)
-        tmp match {
-          case None => None
-          case Some(i) => Some(i + 1) // index i in ls.tail => index i+1
-        }
-      }
+//    def firstLangInTag(tag: Option[String], ls: List[String]): Option[Int] = {
+//      if (tag.isEmpty) None
+//      else if (ls.isEmpty) None
+//      else if (tag.get == ls.head) Some(0) // index: 0
+//      else {
+//        val tmp = firstLangInTag(tag, ls.tail)
+//        tmp match {
+//          case None => None
+//          case Some(i) => Some(i + 1) // index i in ls.tail => index i+1
+//        }
+//      }
+//    }
+
+    def firstLangInTag(tag: String): Option[Int] = {
+      val idx = langs.indexOf(tag)
+      if (idx >= 0) Some(idx) else None
     }
 
-    ???
+    val vectors = for {
+      (posting, score) <- scored // generates a `withFilter RDD` warning. See http://stackoverflow.com/questions/28048586/warning-while-using-rdd-in-for-comprehension
+      tag <- posting.tags
+      idx <- firstLangInTag(tag)
+    } yield (idx * langSpread, score)
+
+
+    vectors.persist()
   }
 
 
@@ -273,10 +300,17 @@ class StackOverflow extends Serializable {
     val closestGrouped = closest.groupByKey()
 
     val median = closestGrouped.mapValues { vs =>
-      val langLabel: String   = ??? // most common language in the cluster
-      val langPercent: Double = ??? // percent of the questions in the most common language
-      val clusterSize: Int    = ???
-      val medianScore: Int    = ???
+      val grouped: Map[Int, Int] = vs
+        .map(_._1 / langSpread) // recomute original index by dividing by the langSpread
+        .groupBy(identity) // group by the index
+        .mapValues(_.size) // get sizes
+      val maxLangIndex = grouped.maxBy(_._2)._1 // get maximum tuple based on size of the group
+      val langLabel: String   = langs(maxLangIndex) // most common language in the cluster
+      val langPercent: Double = grouped(maxLangIndex) * 100.0d / vs.size // percent of the questions in the most common language
+      val clusterSize: Int    = vs.size
+      val sortedScores = vs.map(_._2).toList.sorted
+      val middle = clusterSize / 2 // rounds down 3/2 = 1 4/2 = 2 5/2 =2
+      val medianScore: Int    = if(clusterSize % 2 == 0) (sortedScores(middle-1) + sortedScores(middle)) / 2 else sortedScores(middle)
 
       (langLabel, langPercent, clusterSize, medianScore)
     }
