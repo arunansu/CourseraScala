@@ -1,0 +1,91 @@
+format version: 5
+output mode:
+1 items
+0 -> multiple
+output directories:
+1 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala -> C:\PAT\Dev\Github\CourseraScala\timeusage\bin
+compile options:
+9 items
+0 -> -javabootclasspath
+1 -> C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar
+2 -> -javaextdirs
+3 ->  
+4 -> -bootclasspath
+5 -> C:\PAT\Programs\EclipseScala\plugins\org.scala-lang.scala-library_2.11.8.v20160304-115712-1706a37eb8.jar
+6 -> -deprecation
+7 -> -encoding
+8 -> UTF-8
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.8
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> false
+products:
+1 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> C:\PAT\Dev\Github\CourseraScala\timeusage\bin\timeusage\TimeUsageSuite.class
+binary dependencies:
+4 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> C:\PAT\Programs\EclipseScala\plugins\org.scala-lang.scala-library_2.11.8.v20160304-115712-1706a37eb8.jar
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> C:\PAT\Programs\Play\activator-dist-1.3.10\repository\junit\junit\4.10\jars\junit.jar
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> C:\PAT\Programs\Play\activator-dist-1.3.10\repository\org.scalatest\scalatest_2.11\2.2.4\bundles\scalatest_2.11.jar
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+1 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> timeusage.TimeUsageSuite
+used names:
+0 items
+product stamps:
+1 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\bin\timeusage\TimeUsageSuite.class -> lastModified(1491239067332)
+source stamps:
+1 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> hash(74709409c90cc814647a195ff82b8269c8108c15)
+binary stamps:
+4 items
+C:\PAT\Programs\EclipseScala\plugins\org.scala-lang.scala-library_2.11.8.v20160304-115712-1706a37eb8.jar -> lastModified(1465226104083)
+C:\PAT\Programs\Play\activator-dist-1.3.10\repository\junit\junit\4.10\jars\junit.jar -> lastModified(1472656751397)
+C:\PAT\Programs\Play\activator-dist-1.3.10\repository\org.scalatest\scalatest_2.11\2.2.4\bundles\scalatest_2.11.jar -> lastModified(1472656369999)
+C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar -> lastModified(1452630649974)
+class names:
+4 items
+C:\PAT\Programs\EclipseScala\plugins\org.scala-lang.scala-library_2.11.8.v20160304-115712-1706a37eb8.jar -> scala.Function0
+C:\PAT\Programs\Play\activator-dist-1.3.10\repository\junit\junit\4.10\jars\junit.jar -> org.junit.runner.RunWith
+C:\PAT\Programs\Play\activator-dist-1.3.10\repository\org.scalatest\scalatest_2.11\2.2.4\bundles\scalatest_2.11.jar -> org.scalatest.AbstractSuite
+C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar -> java.lang.Object
+internal apis:
+1 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHA2yH7mAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAABc3IAFHhzYnRpLmFwaS5Bbm5vdGF0aW9u3g6BovZcCrICAAJbAAlhcmd1bWVudHN0AB9bTHhzYnRpL2FwaS9Bbm5vdGF0aW9uQXJndW1lbnQ7TAAEYmFzZXQAEEx4c2J0aS9hcGkvVHlwZTt4cHVyAB9bTHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnQ7UZ2mjzglD3gCAAB4cAAAAAFzcgAceHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudNZFsdgDGxd8AgACTAAEbmFtZXEAfgAcTAAFdmFsdWVxAH4AHHhwdAAFdmFsdWV0AChjbGFzc09mW29yZy5zY2FsYXRlc3QuanVuaXQuSlVuaXRSdW5uZXJdc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHQAB1J1bldpdGhzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AC9zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAARzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQAA29yZ3NxAH4AO3QABWp1bml0c3EAfgA7dAAGcnVubmVyc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+ADxzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABh0aW1ldXNhZ2UuVGltZVVzYWdlU3VpdGV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAJ0ACdzY2FsYS5yZWZsZWN0Lm1hY3Jvcy5pbnRlcm5hbC5tYWNyb0ltcGx0ABBzY2FsYS5kZXByZWNhdGVkc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhxAH4AL3BzcQB+AFIBc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4AMHNxAH4AUgF1cQB+ABAAAAAAcHNxAH4AUgF1cQB+ABAAAAAAcHNxAH4AUgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAEXNxAH4ALXQAEUJlZm9yZUFuZEFmdGVyQWxsc3EAfgAzc3EAfgA2dXEAfgA5AAAAA3NxAH4AO3QAA29yZ3NxAH4AO3QACXNjYWxhdGVzdHEAfgBEc3EAfgAtdAAKU3VpdGVNaXhpbnEAfgBlc3EAfgAtdAAIRnVuU3VpdGVxAH4AZXNxAH4ALXQADEZ1blN1aXRlTGlrZXEAfgBlc3EAfgAtdAALRG9jdW1lbnRpbmdxAH4AZXNxAH4ALXQACEFsZXJ0aW5ncQB+AGVzcQB+AC10AAlOb3RpZnlpbmdxAH4AZXNxAH4ALXQACUluZm9ybWluZ3EAfgBlc3EAfgAtdAAQVGVzdFJlZ2lzdHJhdGlvbnEAfgBlc3EAfgAtdAAFU3VpdGVxAH4AZXNxAH4ALXQADFNlcmlhbGl6YWJsZXNxAH4AM3NxAH4ANnVxAH4AOQAAAANzcQB+ADt0AARqYXZhc3EAfgA7dAACaW9xAH4ARHNxAH4ALXQADUFic3RyYWN0U3VpdGVxAH4AZXNxAH4ALXQACkFzc2VydGlvbnNxAH4AZXNxAH4ALXQADFRyaXBsZUVxdWFsc3NxAH4AM3NxAH4ANnVxAH4AOQAAAANzcQB+ADt0AANvcmdzcQB+ADt0AAlzY2FsYWN0aWNxAH4ARHNxAH4ALXQAE1RyaXBsZUVxdWFsc1N1cHBvcnRxAH4AjXNxAH4ALXQABk9iamVjdHNxAH4AM3NxAH4ANnVxAH4AOQAAAANzcQB+ADtxAH4AhHNxAH4AO3QABGxhbmdxAH4ARHNxAH4ALXQAA0FueXNxAH4AM3NxAH4ANnVxAH4AOQAAAAJzcQB+ADt0AAVzY2FsYXEAfgBEcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AAl0aW1ldXNhZ2VzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVs0xlwbdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQALUM6XFBBVFxEZXZcR2l0aHViXENvdXJzZXJhU2NhbGFcdGltZXVzYWdlXGJpbnQAOEM6XFBBVFxEZXZcR2l0aHViXENvdXJzZXJhU2NhbGFcdGltZXVzYWdlXHNyY1x0ZXN0XHNjYWxhdXIAAltCrPMX+AYIVOACAAB4cAAAABR0cJQJyQzIFGR6GV/4K4JpyBCMFQ==
+external apis:
+0 items
+source infos:
+1 items
+C:\PAT\Dev\Github\CourseraScala\timeusage\src\test\scala\timeusage\TimeUsageSuite.scala -> 
+AAAAAAAAAAA=
+compilations:
+2 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWzS2p1x1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALUM6XFBBVFxEZXZcR2l0aHViXENvdXJzZXJhU2NhbGFcdGltZXVzYWdlXGJpbnQAOEM6XFBBVFxEZXZcR2l0aHViXENvdXJzZXJhU2NhbGFcdGltZXVzYWdlXHNyY1x0ZXN0XHNjYWxh
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWzTGXBt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALUM6XFBBVFxEZXZcR2l0aHViXENvdXJzZXJhU2NhbGFcdGltZXVzYWdlXGJpbnQAOEM6XFBBVFxEZXZcR2l0aHViXENvdXJzZXJhU2NhbGFcdGltZXVzYWdlXHNyY1x0ZXN0XHNjYWxh
