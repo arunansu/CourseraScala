@@ -1,0 +1,14 @@
+[0m[[33mwarn[0m] [0m13 not found[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0-sources.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/commons-configuration/commons-configuration/1.6/commons-configuration-1.6-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client/2.2.0/hadoop-client-2.2.0-sources.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/xmlenc/xmlenc/0.52/xmlenc-0.52-javadoc.jar[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/xmlenc/xmlenc/0.52/xmlenc-0.52-sources.jar[0m
