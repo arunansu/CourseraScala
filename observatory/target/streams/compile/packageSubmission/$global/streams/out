@@ -1,0 +1,21 @@
+[0m[[0minfo[0m] [0mPackaging C:\PAT\Dev\Github\CourseraScala\observatory\target\scala-2.11\capstone-observatory_2.11-0.1-SNAPSHOT.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	observatory\Extraction.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Extraction.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\Signal.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Signal.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\Interaction.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Interaction.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\Interaction2.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Interaction2.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\Visualization.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Visualization.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\Main.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Main.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\Visualization2.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Visualization2.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\models.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\models.scala[0m
+[0m[[0mdebug[0m] [0m	observatory\Manipulation.scala[0m
+[0m[[0mdebug[0m] [0m	  C:\PAT\Dev\Github\CourseraScala\observatory\src\main\scala\observatory\Manipulation.scala[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

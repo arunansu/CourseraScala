@@ -1,11 +1,63 @@
 package observatory
 
 import java.time.LocalDate
+import org.apache.spark.sql._
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types.{DoubleType, IntegerType}
+import org.apache.spark.sql.SparkSession
+import java.nio.file.Paths
 
 /**
   * 1st milestone: data extraction
   */
 object Extraction {
+  
+  implicit val spark: SparkSession = SparkSession
+    .builder()
+    .master("local[6]")
+    .appName(this.getClass.getSimpleName)
+    .getOrCreate()
+    
+    import spark.implicits._
+    
+  def resourcePath(resource: String): String =
+    Paths.get(getClass.getResource(resource).toURI).toString
+  
+  def stations(stationsFile: String): Dataset[Station] = {
+    spark
+      .read
+      .csv(resourcePath(stationsFile))
+      .select(
+        concat_ws("~", coalesce('_c0, lit("")), '_c1).alias("id"),
+        '_c2.alias("latitude").cast(DoubleType),
+        '_c3.alias("longitude").cast(DoubleType)
+      )
+      .where('_c2.isNotNull && '_c3.isNotNull && '_c2 =!= 0.0 && '_c3 =!= 0.0)
+    .as[Station]
+  }
+
+  def temperatures(year: Int,temperaturesFile: String): Dataset[TemperatureRecord] = {
+    spark
+      .read
+      .csv(resourcePath(temperaturesFile) )
+      .select(
+        concat_ws("~", coalesce('_c0, lit("")), '_c1).alias("id"),
+        '_c3.alias("day").cast(IntegerType),
+        '_c2.alias("month").cast(IntegerType),
+        lit(year).as("year"),
+        (('_c4 - 32) / 9 * 5).alias("temperature").cast(DoubleType)
+      )
+      .where('_c4.between(-200, 200))
+      .as[TemperatureRecord]
+  }
+  
+  def joined(stations: Dataset[Station], temperatures: Dataset[TemperatureRecord]):Dataset[JoinedFormat] = {
+    stations.join(temperatures, usingColumn = "id").as[Joined]
+      .map(j => (StationDate(j.day, j.month, j.year), Location(j.latitude, j.longitude), j.temperature))
+      .toDF("date", "location", "temperature")
+      .as[JoinedFormat]
+  }
+
 
   /**
     * @param year             Year number
@@ -14,7 +66,14 @@ object Extraction {
     * @return A sequence containing triplets (date, location, temperature)
     */
   def locateTemperatures(year: Int, stationsFile: String, temperaturesFile: String): Iterable[(LocalDate, Location, Double)] = {
-    ???
+    val j = joined(stations(stationsFile), temperatures(year, temperaturesFile))
+
+    //    // It'stations a shame we have to use the LocalDate because Spark cannot encode that. hence this ugly bit
+    j.collect()
+      .par
+      .map(
+        jf => (jf.date.toLocalDate, jf.location, jf.temperature)
+      ).seq
   }
 
   /**
@@ -22,7 +81,13 @@ object Extraction {
     * @return A sequence containing, for each location, the average temperature over the year.
     */
   def locationYearlyAverageRecords(records: Iterable[(LocalDate, Location, Double)]): Iterable[(Location, Double)] = {
-    ???
+    records
+      .par
+      .groupBy(_._2)
+      .mapValues(
+        l => l.foldLeft(0.0)(
+          (t,r) => t + r._3) / l.size
+      )
+      .seq
   }
-
 }
